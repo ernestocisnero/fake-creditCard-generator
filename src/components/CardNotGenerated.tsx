@@ -15,7 +15,7 @@ export const CardNotGenerated = () => {
       }}
     >
       <Typography sx={{ color: "white" }}>
-        <p>Your credit card will appear here.</p>
+        Your credit card will appear here.
       </Typography>
     </Box>
   );

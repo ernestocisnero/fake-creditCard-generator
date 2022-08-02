@@ -1,9 +1,16 @@
 import { Box, Grid, Typography } from "@mui/material";
+import { useEffect } from 'react';
 import "./App.css";
-import { CardData } from "./components/CardData";
-import { CardNotGenerated } from "./components/CardNotGenerated";
+import { CardData, CardNotGenerated } from "./components";
+import { LuhnAlgorithm } from "./helpers";
+
 
 function App() {
+
+  useEffect(() => {
+    console.log(LuhnAlgorithm(1234567890123456));
+  }, [])
+  
   return (
     <Box sx={{ display:'flex', flexDirection:'column', width: '100vw',height: '100vh',backgroundColor: 'primary.main' }}>
 
