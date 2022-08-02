@@ -11,12 +11,12 @@ function App() {
         <Typography variant="h4" component="h1" align="center" padding={ 3 } sx={{ color:'white' }}>Fake Credit Card Generator</Typography>
       
 
-        <Grid container spacing={2}>
-          <Grid item xs={4} sx={{ height:'calc(100vh - 74px)'}}>
+        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 2, sm: 2, md: 12 }}>
+          <Grid item xs={4} >
             <CardData />
           </Grid>
 
-          <Grid item xs={8} sx={{ display:'flex', justifyContent:'center', alignContent:'center', height:'calc(100vh - 74px)' }}>
+          <Grid item xs={8} sx={{ display:'flex', justifyContent:'center', alignContent:'center'}}>
             <CardNotGenerated />
           </Grid>
         </Grid>

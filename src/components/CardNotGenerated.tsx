@@ -1,12 +1,22 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography } from "@mui/material";
 
 export const CardNotGenerated = () => {
-    return (
-        <Box sx={{ display:'flex', justifyContent:'center', width: 450, height: 250, p: 2, marginTop: 20, border: '1px dashed grey', borderRadius: 2 }}>
-            <Typography sx={{ color:'white' }}>
-                <p>Your credit card will appear here.</p>
-            </Typography> 
-            
-        </Box>
-    )
-}
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        width: { xs:300, sm: 450 },
+        height: { xs:200, sm:250},
+        p: 2,
+        marginTop: { xs:5, sm:20 },
+        border: "1px dashed grey",
+        borderRadius: 2,
+      }}
+    >
+      <Typography sx={{ color: "white" }}>
+        <p>Your credit card will appear here.</p>
+      </Typography>
+    </Box>
+  );
+};

@@ -8,11 +8,11 @@ export const CardData = () => {
                 container
                 sx={{
                     backgroundColor: "white",
-                    padding: 3,
-                    marginLeft: 5,
-                    marginTop: 20,
+                    padding:3,
+                    marginLeft: { xs: 5, sm: 10  },
+                    marginTop: {xs: 2, sm: 20 },
                     borderRadius: 2,
-                    width: { sm: 450 },
+                    width: { xs:300, sm: 450 },
                 }}
             >
                 <Grid item xs={12} sx={{ mt: 2 }}>
