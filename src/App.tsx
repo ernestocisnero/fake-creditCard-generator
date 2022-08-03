@@ -7,9 +7,11 @@ import { LuhnAlgorithm } from "./helpers";
 
 function App() {
 
+  const cardNumberExample: number = 1234567890123456;
+
   useEffect(() => {
-    console.log(LuhnAlgorithm(1234567890123456));
-  }, [])
+    LuhnAlgorithm(cardNumberExample);
+  }, [ cardNumberExample ])
   
   return (
     <Box sx={{ display:'flex', flexDirection:'column', width: '100vw',height: '100vh',backgroundColor: 'primary.main' }}>
