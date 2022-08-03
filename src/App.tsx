@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import "./App.css";
 import { CardData, CardNotGenerated } from "./components";
 import { LuhnAlgorithm } from "./helpers";
+import { CardGenerated } from './components/CardGenerated';
 
 function App() {
   const cardNumberExample: number = 1234567890123456;
@@ -49,7 +50,8 @@ function App() {
             alignContent: "center",
           }}
         >
-          <CardNotGenerated />
+          {/* <CardNotGenerated /> */}
+          <CardGenerated />
         </Grid>
       </Grid>
     </Box>

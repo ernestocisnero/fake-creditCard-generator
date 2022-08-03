@@ -8,10 +8,13 @@ export const theme = createTheme({
       main: '#2f3e46',
     },
     secondary: {
-      main: '#52796f',
+      main: '#1A1849',
     },
     error: {
       main: red.A400,
+    },
+    info: {
+      main: '#aaa9ad',
     },
   },
 });

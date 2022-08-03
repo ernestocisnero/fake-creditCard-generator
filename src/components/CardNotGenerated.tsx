@@ -22,13 +22,6 @@ export const CardNotGenerated = () => {
     >
       <Typography sx={{ color: "white" }}>
         Your credit card will appear here.
-        {
-          userData && 
-          <div>
-            <p>{userData.name}</p>
-            <p>{userData.lastName}</p>
-          </div>
-        }
       </Typography>
     </Box>
   );

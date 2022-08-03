@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import { formInputProps, IProp } from "../interfaces";
+import { formInputProps, IProp, IUser } from "../interfaces";
 import { UserContext } from './userContext';
 
 
@@ -7,7 +7,7 @@ import { UserContext } from './userContext';
 
 export const DataContextProvider:FC<IProp> = ({ children }) => {
 
-  const [ userData, setUserData ] = useState(null);
+  const [ userData, setUserData ] = useState({userData:""});
 
 
   return (
