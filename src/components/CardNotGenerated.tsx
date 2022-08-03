@@ -1,6 +1,12 @@
 import { Box, Typography } from "@mui/material";
+import { UserContext } from '../context/userContext';
+import { useContext } from 'react';
 
 export const CardNotGenerated = () => {
+
+
+  const { userData } = useContext(UserContext);
+  
   return (
     <Box
       sx={{
@@ -16,6 +22,13 @@ export const CardNotGenerated = () => {
     >
       <Typography sx={{ color: "white" }}>
         Your credit card will appear here.
+        {
+          userData && 
+          <div>
+            <p>{userData.name}</p>
+            <p>{userData.lastName}</p>
+          </div>
+        }
       </Typography>
     </Box>
   );

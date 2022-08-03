@@ -1,8 +1,8 @@
 import { Button, Grid, TextField } from "@mui/material";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import { useForm } from "../hooks";
-import { useState, useEffect } from "react";
-import { formInputProps } from "../interfaces";
+import { useContext } from "react";
+import { UserContext } from "../context";
 
 export const CardData = () => {
     const { name, lastName, onInputChange, onReset } = useForm({
@@ -10,23 +10,16 @@ export const CardData = () => {
         lastName: "",
     });
 
-    const [userData, setUserData] = useState<formInputProps>({
-        name: "",
-        lastName: "",
-    });
+    const { userData, setUserData } = useContext(UserContext);
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
         event.preventDefault();
         setUserData({
             name,
-            lastName,
-        });
+            lastName
+        })
         onReset();
     };
-
-    // useEffect(() => {
-    //     console.log(userData);
-    // }, [userData]);
 
     return (
         <form onSubmit={handleSubmit}>
