@@ -7,7 +7,7 @@ import { UserContext } from './userContext';
 
 export const DataContextProvider:FC<IProp> = ({ children }) => {
 
-  const [ userData, setUserData ] = useState({userData:""});
+  const [ userData, setUserData ] = useState({name:"", lastName:""});
 
 
   return (
