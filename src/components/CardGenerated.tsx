@@ -3,6 +3,7 @@ import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard";
 import { useContext } from 'react';
 import { UserContext } from "../context";
 import { unstable_renderSubtreeIntoContainer } from "react-dom";
+import { GenerateCVV } from "../helpers";
 
 export const CardGenerated = () => {
 
@@ -53,7 +54,10 @@ export const CardGenerated = () => {
 
             <Grid item container justifyContent="flex-end">
                 <Typography sx={{ color: "#aaa9ad", fontSize: "15px", pr: 2 }}>
-                    Exp.Date: 05/25
+                    Exp.Date: { new Date().getMonth() }/{ new Date().getFullYear() + 5 }
+                </Typography>
+                <Typography sx={{ color: "#aaa9ad", fontSize: "15px", pr: 2 }}>
+                    CVV: { GenerateCVV() }
                 </Typography>
             </Grid>
 

@@ -1,16 +1,12 @@
 import { Box, Grid, Typography } from "@mui/material";
-import { useEffect } from "react";
+import { useEffect, useContext } from 'react';
 import "./App.css";
 import { CardData, CardNotGenerated } from "./components";
-import { LuhnAlgorithm } from "./helpers";
 import { CardGenerated } from './components/CardGenerated';
+import { UserContext } from './context';
 
 function App() {
-  const cardNumberExample: number = 1234567890123456;
-
-  useEffect(() => {
-    LuhnAlgorithm(cardNumberExample);
-  }, [cardNumberExample]);
+  const { userData } = useContext(UserContext);
 
   return (
     <Box
@@ -50,8 +46,11 @@ function App() {
             alignContent: "center",
           }}
         >
-          {/* <CardNotGenerated /> */}
-          <CardGenerated />
+          {
+            (userData.name && userData.lastName) ? <CardGenerated /> : <CardNotGenerated />
+          }
+          
+          
         </Grid>
       </Grid>
     </Box>
