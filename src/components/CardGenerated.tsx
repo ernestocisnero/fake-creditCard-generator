@@ -2,13 +2,13 @@ import { Box, Grid, Typography } from "@mui/material";
 import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard";
 import { useContext } from 'react';
 import { UserContext } from "../context";
-import { unstable_renderSubtreeIntoContainer } from "react-dom";
-import { GenerateCVV } from "../helpers";
+import { GenerateCVV, ValidCardsToUse } from "../helpers";
+
 
 export const CardGenerated = () => {
 
     const { userData } = useContext(UserContext);
-    const cardNumber:number = 1234567890123456;
+    const cardNumber:number = ValidCardsToUse();
     return (
         <Grid
             container
