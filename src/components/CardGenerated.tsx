@@ -65,7 +65,7 @@ export const CardGenerated = () => {
                 <Typography
                     sx={{ color: "#aaa9ad", fontSize: "20px", pr: 2 }}
                 >
-                   { (userData.name && userData.lastName) ? ` ${ userData.name } ${ userData.lastName }`: ""}
+                   { (userData.name && userData.lastName) ? ` ${ userData.lastName }. ${ userData.name }`: ""}
                 </Typography>
             </Grid>
 
