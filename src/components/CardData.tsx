@@ -3,6 +3,7 @@ import CreditCardIcon from "@mui/icons-material/CreditCard";
 import { useForm } from "../hooks";
 import { useContext } from "react";
 import { UserContext } from "../context";
+import { IUser } from "../interfaces";
 
 export const CardData = () => {
     const { name, lastName, onInputChange, onReset } = useForm({
@@ -10,7 +11,7 @@ export const CardData = () => {
         lastName: "",
     });
 
-    const { userData, setUserData } = useContext(UserContext);
+    const { setUserData } = useContext<any>(UserContext);
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
         event.preventDefault();

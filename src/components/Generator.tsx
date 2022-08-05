@@ -5,7 +5,7 @@ import { UserContext } from "../context";
 
 
 export const Generator = ()=> {
-  const { userData } = useContext(UserContext);
+  const { userData } = useContext<any>(UserContext);
 
   return (
     <Box

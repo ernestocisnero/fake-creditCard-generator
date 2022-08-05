@@ -7,7 +7,7 @@ import { GenerateCVV, ValidCardsToUse } from "../helpers";
 
 export const CardGenerated = () => {
 
-    const { userData } = useContext(UserContext);
+    const { userData } = useContext<any>(UserContext);
     const cardNumber:number = ValidCardsToUse();
     return (
         <Grid

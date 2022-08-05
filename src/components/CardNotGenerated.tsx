@@ -5,7 +5,7 @@ import { useContext } from 'react';
 export const CardNotGenerated = () => {
 
 
-  const { userData } = useContext(UserContext);
+  const { userData } = useContext<any>(UserContext);
   
   return (
     <Box
