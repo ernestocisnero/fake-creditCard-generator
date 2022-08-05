@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import { BasicMenu } from "./BasicMenu";
 
 export const NavBar = () => {
-    let mql = window.matchMedia('(max-width: 600px)');
-    console.log(mql);
     return (
         <AppBar
             position="fixed"

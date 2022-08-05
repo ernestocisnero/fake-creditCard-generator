@@ -23,9 +23,4 @@ export const ValidCardsToUse = ()=>{
     ]
 
     return validCards[ Math.floor(Math.random() * ((validCards.length-1) - 0 + 1)) + 0 ];
-
-    //return Math.floor(Math.random() * (4 - 0 + 1)) + 0;
-    
-
-
 }
