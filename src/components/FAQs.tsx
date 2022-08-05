@@ -7,8 +7,9 @@ export const FAQs = () => {
         display: "flex",
         flexDirection: "column",
         width: "100vw",
-        height: "100vh",
+        height: { xs:"fit-content", sm: "100vh", md:"100vh"},
         backgroundColor: "primary.main",
+        padding:{ xs:5 }
       }}
     >
       <Grid
@@ -22,7 +23,7 @@ export const FAQs = () => {
             backgroundColor: "white",
             padding: 3,
             marginLeft: { xs: 5, sm: 10 },
-            marginTop: { xs: 2, sm: 20 },
+            marginTop: { xs: 12, sm: 20 },
             borderRadius: 2,
             width: { xs: 300, sm: 450 },
           }}

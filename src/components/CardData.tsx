@@ -29,7 +29,7 @@ export const CardData = () => {
                     backgroundColor: "white",
                     padding: 3,
                     marginLeft: { xs: 5, sm: 10 },
-                    marginTop: { xs: 2, sm: 20 },
+                    marginTop: { xs: 12, sm: 20 },
                     borderRadius: 2,
                     width: { xs: 300, sm: 450 },
                 }}

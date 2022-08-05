@@ -16,6 +16,7 @@ export const CardNotGenerated = () => {
         height: { xs:200, sm:250},
         p: 2,
         marginTop: { xs:5, sm:20 },
+        
         border: "1px dashed grey",
         borderRadius: 2,
       }}
