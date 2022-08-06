@@ -3,7 +3,6 @@ import CreditCardIcon from "@mui/icons-material/CreditCard";
 import { useForm } from "../hooks";
 import { useContext } from "react";
 import { UserContext } from "../context";
-import { IUser } from "../interfaces";
 
 export const CardData = () => {
     const { name, lastName, onInputChange, onReset } = useForm({

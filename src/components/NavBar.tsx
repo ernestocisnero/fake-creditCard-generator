@@ -10,7 +10,6 @@ export const NavBar = () => {
 
     const themed = useTheme();
     const matches = useMediaQuery( themed.breakpoints.down("sm") );
-    console.log("This match",matches);
 
     return (
         <AppBar

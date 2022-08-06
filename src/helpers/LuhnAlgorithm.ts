@@ -10,16 +10,6 @@ export const LuhnAlgorithm = (cardNumber: number): Object => {
             return Number(num);
         });
 
-    //Check digits on credit card
-    if (cardNumberArray.length !== 16) {
-        //Return -1 if the credit card number has not 16 digits.
-        cardValidation = {
-            errorCode: -1,
-            info: 'The credit card number has not 16 digits.',
-        };
-        return cardValidation;
-    }
-
     for (let i = 0; i < cardNumberArray.length; i += 2) {
         cardNumberArray[i] = cardNumberArray[i] * 2;
         if (cardNumberArray[i] > 9) {
