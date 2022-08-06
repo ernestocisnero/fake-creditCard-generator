@@ -4,10 +4,6 @@ import { LuhnAlgorithm } from '../helpers';
 
 export const ValidateCard = () => {
 
-  useEffect(() => {
-    console.log(LuhnAlgorithm(5204740009900014));
-  }, [])
-  
   return (
     <Box
       sx={{
