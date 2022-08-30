@@ -2,13 +2,16 @@ import { Box, Grid, Typography } from "@mui/material";
 import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard";
 import { useContext } from 'react';
 import { UserContext } from "../context";
-import { GenerateCVV, ValidCardsToUse } from "../helpers";
+import { GenerateCVV } from "../helpers";
+import  { GenCC }  from 'creditcard-generator';
+
 
 
 export const CardGenerated = () => {
-
+    
     const { userData } = useContext<any>(UserContext);
-    const cardNumber:number = ValidCardsToUse();
+    const cardNumber:number = GenCC();        
+    
     return (
         <Grid
             container
